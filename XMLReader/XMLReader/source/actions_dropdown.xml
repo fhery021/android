@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dropdown>
+	<!--                                      STOPPING                                -->
+	<session type="all" state="STOPPING" admin="true">
+		
+	</session>
+	
+	<session type="all" state="STOPPING" admin="false">
+		
+	</session>
+	<!--                                       /STOPPING                                -->
+	
+	<!--                                      IN_PREPARATION                          -->
+	<session type="all" state="IN_PREPARATION" admin="true">
+		<dropdownbutton name="Start" tooltip="Start session" disabled="false" />
+		<dropdownbutton name="Delete" tooltip="Delete session" disabled="false" />
+		<dropdownbutton name="Configure" tooltip="Configure Session" disabled="false" />
+	</session>
+	
+	<session type="NotCCO" state="IN_PREPARATION" admin="true">
+		<dropdownbutton name="Preview" tooltip="Run Preview" disabled="false" />
+		<dropdownbutton name="Latest Report" tooltip="Show the latest preview report" disabled="false" />
+	</session>
+	
+	<session type="CCO" state="IN_PREPARATION" admin="true">
+		<dropdownbutton name="Clusters" tooltip="Clusters" disabled="false" />
+		<dropdownbutton name="Work Orders" tooltip="Work Orders" disabled="false" />
+	</session>
+	
+	<session type="all" state="IN_PREPARATION" admin="false">
+		<dropdownbutton name="Preview" tooltip="Not allowed option for your profile" disabled="true" />
+		<dropdownbutton name="Start" tooltip="Not allowed option for your profile" disabled="true" />
+		<dropdownbutton name="Delete" tooltip="Not allowed option for your profile" disabled="true" />
+	</session>
+	
+	<!--                                    /IN_PREPARATION                          -->
+	
+	<!--                                      RUNNING                                -->
+	<session type="all" state="RUNNING" admin="true">
+		<dropdownbutton name="Stop" tooltip="Stop session" disabled="false" />
+		<dropdownbutton name="Configure" tooltip="Configure Session" disabled="false" />
+	</session>
+	
+	<session type="NotCCO" state="RUNNING" admin="true">
+		<dropdownbutton name="Iterate" tooltip="Iterate" disabled="false" />
+		<dropdownbutton name="Latest Report" tooltip="Show the latest preview report" disabled="false" />
+	</session>
+
+	<session type="CCO" state="RUNNING" admin="true">
+		<dropdownbutton name="Clusters" tooltip="Clusters" disabled="false" />
+		<dropdownbutton name="Pause" tooltip="Pause session" disabled="false" />
+		<dropdownbutton name="ResumeAllClusters" tooltip="Resume all clusters" disabled="false" />
+		<dropdownbutton name="Work Orders" tooltip="Work Orders" disabled="false" />
+	</session>
+	
+	<session type="all" state="RUNNING" admin="false">
+		<dropdownbutton name="Pause" tooltip="Not allowed option for your profile" disabled="true" />
+		<dropdownbutton name="Stop" tooltip="Not allowed option for your profile" disabled="true" />
+	</session>
+		
+	<session type="NotCCO" state="RUNNING" admin="false">
+		<dropdownbutton name="Iterate" tooltip="Not allowed option for your profile" disabled="true" />
+		<dropdownbutton name="Latest Report" tooltip="Not allowed option for your profile" disabled="true" />
+	</session>
+	<!--                                      /RUNNING                                -->
+	
+	<!--                                      ITERATING                              -->
+	<session type="all" state="ITERATING" admin="true">
+		<dropdownbutton name="Pause" tooltip="Pause session" disabled="false" />
+		<dropdownbutton name="Stop" tooltip="Stop session" disabled="false" />
+		<dropdownbutton name="Configure" tooltip="Configure Session" disabled="false" />
+	</session>
+	
+	<session type="CCO" state="ITERATION" admin="true">
+		<dropdownbutton name="Clusters" tooltip="Clusters" disabled="false" />
+		<dropdownbutton name="ResumeAllClusters" tooltip="Resume all clusters" disabled="false" />
+		<dropdownbutton name="Work Orders" tooltip="Work Orders" disabled="false" />
+	</session>
+	
+	<session type="NotCCO" state="ITERATING" admin="false">
+		<dropdownbutton name="Iterate" tooltip="Not allowed option for your profile" disabled="true" />
+		<dropdownbutton name="Latest Report" tooltip="Not allowed option for your profile" disabled="true" />
+	</session>
+
+	<!--                                    /ITERATING                              -->
+	
+	<!--                                    PAUSED                                  -->
+	<session type="all" state="PAUSED" admin="true">
+		<dropdownbutton name="Configure" tooltip="Configure Session" disabled="false" />
+	</session>	
+
+	<session type="NotCCO" state="PAUSED" admin="true">
+		<dropdownbutton name="Resume" tooltip="Resume session" disabled="false" />
+		<dropdownbutton name="Stop" tooltip="Stop session" disabled="false" />
+		<dropdownbutton name="Latest Report" tooltip="Show the latest preview report" disabled="false" />
+	</session>
+
+	<session type="CCO" state="PAUSED" admin="true">
+		<dropdownbutton name="Resume" tooltip="Resume session" disabled="false" />
+		<dropdownbutton name="Stop" tooltip="Stop session" disabled="false" />
+		<dropdownbutton name="Clusters" tooltip="Clusters" disabled="false" />
+		<dropdownbutton name="Work Orders" tooltip="Work Orders" disabled="false" />
+	</session>
+	
+	<session type="NotCCO" state="PAUSED" admin="false">
+		<dropdownbutton name="Latest Report" tooltip="Not allowed for your profile" disabled="true" />
+	</session>
+		
+	<session type="all" state="PAUSED" admin="false">
+		<dropdownbutton name="Resume" tooltip="Not allowed option for your profile" disabled="true" />
+		<dropdownbutton name="Stop" tooltip="Not allowed option for your profile" disabled="true" />
+	</session>
+	<!--                                      /PAUSED                                -->
+	
+	<!--                                      STOPPED                                -->
+	<session type="all" state="STOPPED" admin="true">
+		<dropdownbutton name="Start" tooltip="Start session" disabled="false" />
+		<dropdownbutton name="Delete" tooltip="Delete session" disabled="false" />
+		<dropdownbutton name="Configure" tooltip="Configure Session" disabled="false" />
+	</session>
+	
+	<session type="NotCCO" state="STOPPED" admin="true">
+		<dropdownbutton name="Latest Report" tooltip="Show the latest preview report" disabled="false" />
+	</session>
+
+	<session type="CCO" state="STOPPED" admin="true">
+		<dropdownbutton name="Clusters" tooltip="Clusters" disabled="false" />
+		<dropdownbutton name="Work Orders" tooltip="Work Orders" disabled="false" />
+	</session>
+
+	<session type="all" state="STOPPED" admin="false">
+		<dropdownbutton name="Start" tooltip="Not allowed option for your profile" disabled="true" />
+		<dropdownbutton name="Delete" tooltip="Not allowed option for your profile" disabled="true" />
+	</session>
+
+	<session type="NotCCO" state="STOPPED" admin="false">
+		<dropdownbutton name="Latest Report" tooltip="Not allowed for your profile" disabled="true" />
+	</session>
+	
+	<!--                                      /STOPPED                                -->
+	
+	<!--                                      WAITING_DECISION                        -->
+	<session type="all" state="WAITING_DECISION" admin="true">
+		<dropdownbutton name="Accept" tooltip="Accept plan" disabled="false" />
+		<dropdownbutton name="Reject" tooltip="Reject plan" disabled="false" />
+		<dropdownbutton name="Configure" tooltip="Configure Session" disabled="false" />
+	</session>
+
+	<session type="NotCCO" state="WAITING_DECISION" admin="true">
+		<dropdownbutton name="Latest Report" tooltip="Show the latest preview report" disabled="false" />
+	</session>
+
+	<session type="CCO" state="WAITING_DECISION" admin="true">
+		<dropdownbutton name="Clusters" tooltip="Clusters" disabled="false" />
+		<dropdownbutton name="ResumeAllClusters" tooltip="Resume all clusters" disabled="false" />
+		<dropdownbutton name="Work Orders" tooltip="Work Orders" disabled="false" />
+	</session>
+
+	<session type="all" state="WAITING_DECISION" admin="false">
+		<dropdownbutton name="Accept" tooltip="Not allowed option for your profile" disabled="true" />
+		<dropdownbutton name="Reject" tooltip="Not allowed option for your profile" disabled="true" />
+	</session>
+
+	<session type="NotCCO" state="WAITING_DECISION" admin="false">
+		<dropdownbutton name="Latest Report" tooltip="Not allowed for your profile" disabled="true" />
+	</session>
+	<!--                                      /WAITING_DECISION                        -->
+	
+	<!--                                      NONE                                     -->
+	<session type="all" state="NONE" admin="true">
+		<dropdownbutton name="Delete" tooltip="Delete session" disabled="false" />
+		<dropdownbutton name="Configure" tooltip="Configure Session" disabled="false" />
+	</session>
+
+	<session type="NotCCO" state="NONE" admin="true">
+		<dropdownbutton name="Latest Report" tooltip="Show the latest preview report" disabled="false" />
+	</session>
+	
+	<session type="CCO" state="NONE" admin="true">
+		<dropdownbutton name="Clusters" tooltip="Clusters" disabled="false" />
+		<dropdownbutton name="ResumeAllClusters" tooltip="Resume all clusters" disabled="false" />
+		<dropdownbutton name="Work Orders" tooltip="Work Orders" disabled="false" />
+	</session>
+
+	<session type="all" state="NONE" admin="false">
+		<dropdownbutton name="Delete" tooltip="Not allowed option for your profile" disabled="true" />
+	</session>
+	
+	<session type="NotCCO" state="NONE" admin="false">
+		<dropdownbutton name="Latest Report" tooltip="Not allowed for your profile" disabled="true" />
+	</session>
+
+	<!--                                      /NONE                                    -->
+</dropdown>
